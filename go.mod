@@ -1,10 +1,11 @@
-module github.com/nelrafa103/mini-proyecto-backend
+module github.com/mini-proyecto-backend
 
 go 1.17
 
+require github.com/go-pg/pg/v10 v10.10.6
+
 require (
 	github.com/andybalholm/brotli v1.0.4 // indirect
-	github.com/go-pg/pg/v10 v10.10.6 // indirect
 	github.com/go-pg/zerochecker v0.2.0 // indirect
 	github.com/gofiber/fiber/v2 v2.29.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect

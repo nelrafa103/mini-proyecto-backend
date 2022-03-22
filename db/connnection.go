@@ -1,7 +1,8 @@
-package dbConnection
+package db
 import (
     "github.com/go-pg/pg/v10"
 "os"
+"log"
 )
 func ConnectToDb() {
 db:= pg.Connect(&pg.Options{
@@ -16,4 +17,3 @@ db:= pg.Connect(&pg.Options{
         }
     }()
 }
-ConnectToDb()
