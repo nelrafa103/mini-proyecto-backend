@@ -1,20 +1,31 @@
-package APIS
+package apis
+
 import (
-	 "github.com/gofiber/fiber/v2"
-	 "github.com/goccy/go-json"
+	"github.com/gofiber/fiber/v2"
+	"github.com/mini-proyecto-backend/db"
+	"github.com/mini-proyecto-backend/schemas"
 )
 
-func UserApi(app *fiber.Ctx){
-   app.Get("/user", func(c *fiber.Ctx) error {
-   	type user struct {
-   		Name string,
-   		Email string
-   	}
-    user1 := &user{
-      Name:"admin",
-      Email: "ndiaz@intellisys.com",
-    }
-    return c.Json()
-  })
-  return 
+func getUser(c *fiber.Ctx) /*error*/ {
+
+	return
+	// return err // c.JSON()
+}
+
+func auth() {
+
+}
+
+func returnUser() schemas.User {
+	user := new(schemas.User)
+	return *user
+}
+func searchUser(id uint32) {
+	db := db.ConnectToDb()
+	user := &schemas.User{Id: id}
+	err := db.Model(user).WherePK().Select()
+	if err != nil {
+		panic(err)
+	}
+	return
 }
