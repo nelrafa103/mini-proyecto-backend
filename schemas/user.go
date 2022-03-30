@@ -7,3 +7,13 @@ type User struct {
 	Password string
 }
 
+type AuthLogin struct {
+	Name string
+	Password string
+}
+
+type AuthSignUp struct {
+	Name string
+	Password string
+	Email string
+}
