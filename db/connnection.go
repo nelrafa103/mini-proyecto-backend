@@ -3,11 +3,10 @@ package db
 import (
 	"github.com/go-pg/pg/v10"
 	"os"
-	"fmt"
 )
 
 func ConnectToDb()(*pg.DB) {
-	fmt.Println("Connecting to Database")
+	 
 	os.Setenv("DB_HOST", "localhost")
 	os.Setenv("DB_ADDR", ":5432")
 	os.Setenv("DB_USER", "postgres")

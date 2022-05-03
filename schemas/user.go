@@ -8,12 +8,18 @@ type User struct {
 }
 
 type AuthLogin struct {
-	Name string
-	Password string
+	Email string `json:"email" xml:"email" form:"email"`
+	Password string `json:"password" xml:"password" form:"password"`
 }
 
-type AuthSignUp struct {
-	Name string
-	Password string
-	Email string
+type AuthRegister struct {
+	Email string `json:"email" xml:"email" form:"email"`
+	Name string `json:"name" xml:"name" form:"name"`
+	Password string `json:"password" xml:"password" form:"password"`
 }
+
+type AccountRequest struct {
+ Email string `json:"email" xml:"email" form:"email"`
+ Token string `json:"token" xml:"token" form:"token"`
+}
+

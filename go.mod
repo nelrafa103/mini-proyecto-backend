@@ -9,6 +9,8 @@ require (
 	github.com/go-pg/zerochecker v0.2.0 // indirect
 	github.com/goccy/go-json v0.9.6 // indirect
 	github.com/gofiber/fiber/v2 v2.29.0 // indirect
+	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
+	github.com/golang-jwt/jwt/v4 v4.4.1 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/klauspost/compress v1.15.0 // indirect
 	github.com/tmthrgd/go-hex v0.0.0-20190904060850-447a3041c3bc // indirect
